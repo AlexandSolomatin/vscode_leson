@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ссылки</title>
+</head>
+<body>
+    <h1><strong>Ссылки на страницы</strong></h1>
+    <p><b><u>Тут что-то про таблицы</u></b></p>
+    
+    <ol>
+        <li><u>table</u> - закрываемый</li>
+        <li><u>tr</u> - строка. тоже парный тег</li>
+        <li><u>td</u> - столбец. тоже парный тег</li>
+        <li><u>align=</u> - атрибут выравнивания для td</li>
+        <li><u>border=</u> - выделение таблицы</li>
+        <li><u>width</u> - задает размер таблицы в %</li>
+        <li><u>height=</u> - задает высоту таблицы в пикселях</li>
+        <li><u>colspan=""</u> - выранивание столбца</li>
+        <li><u>rowspan=""</u> - выранивание строки</li>
+                
+    </ol>
+    <p>Таблица 1. Параметры и атрибуты таблицы</p>
+    <table border="1" width="40%" height="50px">
+        <tr>
+           <td align="center">(1, 1)</td>
+           <td align="right">(1, 2)</td>
+       </tr>  
+       <tr>
+           <td align="left">(2, 1)</td>
+           <td>(2, 2)</td>
+       </tr>        
+   </table>
+
+<p>Таблица 2. Выравнивание столбца</p>
+   <table border="1" width="40%" height="50px">
+    <tr>
+       <td colspan="2">(1, 1)</td>       
+   </tr>  
+   <tr>
+       <td rowspan="2">(2, 1)</td>
+       <td>(2, 2)</td>
+   </tr>        
+   <tr>
+    <td>(3, 1)</td>
+    </tr>   
+   </table>
+
+    <p>Таблица 3. </p>
+   <table border="1" width="40%" height="50px">
+    <tr>
+       <td colspan="2">(1, 1)</td>       
+   </tr>  
+   <tr>
+       <td rowspan="2">(2, 1)</td>
+       <td>(2, 2)</td>
+   </tr>        
+   <tr>
+    <td>(3, 1)</td>
+    </tr>
+    <tr>
+        <td colspan="2" alegn="center">footer</td>
+    </tr>   
+</table>
+    </body>
+</html>
