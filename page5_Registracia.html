@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+</head>
+
+<body>
+    <h1>Регистрация на сайте></h1>
+    <form name='signup' action='#' method="post">
+        <div>
+            <label>Введите логин:</label>
+            <input type="text" name="username">
+        </div>
+        <div>
+            <!-- Если в input написать любое значение value="AsDf", 
+                то оно будет задаваться по умолчанию -->
+            <label>Введите E-mail:</label>
+            <input type="email" name="email" placeholder="введите E-mail">
+        </div>
+        <div>
+            <!-- Тип password позволяет скрыть напечатанный пароль точками -->
+            <label>Введите пароль:</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label>Укажите пол</label>
+            <!-- Создание радиокнопок. Если имена одинаковые, то выбор только одной
+            если разные, то можно сразу несколько вариантов выбора
+            value будет отправлять на скрип обработчик чтоб он записал пол -->
+            <input type="radio" name="sex" value="0" />Мужской
+            <input type="radio" name="sex" value="1" />Женский 
+        </div>
+        <div>
+            <!-- Тут создадим чекбокс -->
+            <label>Я ознакомлен с политикой конфедециальности:</label>
+            <input type="checkbox" name="rules">
+        </div>
+        <div>
+            <!-- Тут запилим еще чекбокс для закрепления информации-->
+            <label>Хочу получать рассылку статей сайта:</label>
+            <input type="checkbox" name="inform">
+        </div>
+        <div>
+            <!-- Создаем input на загрузку файла -->
+            <label>Загрузить аватар:</label>
+            <input type="file" name="avatar">
+        </div>
+        <div>
+            <!-- Создание выпадающего списка. Value опять пишется для скрипта -->
+            <label>Год рождения:</label>
+            <select mane="year">
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+            </select>
+        </div>
+        <div>
+            <!-- Создаем область отправки сообщений. placeholder - подсказка 
+            placeholder вставил в E-mail для наглядности работы -->
+            <textarea placeholder="введите текст сообщения"></textarea>
+        </div>
+         <!-- Создание кнопки зарегистрироваться, которая перебрасывает нас на скрип записи 
+            данных но пока что на # -->
+            <input type="submit" name="signup" value="Загеристрироваться">
+
+    </form>
+</body>
+</html>
