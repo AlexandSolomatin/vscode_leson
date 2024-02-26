@@ -1,0 +1,23 @@
+/* Обращаемся к классу и записываем его стиль. Обращение к классу делается через точку */
+.mainBox {
+    width: 100;
+    height: 600px;
+    background: aqua;
+}
+
+/* Обращаюсь к и всем блокам с этим классом классу внутри .mainBox и задаю параметры высоты и ширины */
+.box {
+    width: 400px;
+    height: 200px;
+}
+
+/* Работа с конкретным блоком */
+.boxBlue {
+    background: blue;
+}
+.boxRed {
+    background: red;
+}
+.boxGreen {
+    background: green;
+}
