@@ -1,3 +1,4 @@
+<!-- Селекторы атрибутов -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,17 @@
     <link rel="stylesheet" tupe="text/css" href="styles_3_Lesson_CSS.css" />
 </head>
 <body>
+    <form name="myForm" action="#" method="post">
+        <div>
+            <!-- Создаем поле для текста -->
+            <input type="text" name="mess" />
+            <!-- Создаем кнопку "Отправить" -->
+            <input type="submit" name="send" value="отправить" />
+        </div>
 
+        <!-- Параметр data. Параметр применим ко всем тегам data-имя. -->
+        <p data-text='red'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, magni.</p>
+        <p data-text='green'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, repellendus?</p>
+    </form>
 </body>
 </html>

@@ -1,0 +1,18 @@
+/* Изменение параметра input который равен type=text */
+/* input[type='text']{
+    height: 50px;
+} */
+
+/* Если одинаковые параметры, то можно записать через запятую. 
+   Стиль применится и к полю сообщения и к кнопке */
+input[type='text'], input[type='submit']{
+    height: 50px;
+}
+
+p[data-text='red']{
+    color: red;
+}
+
+p[data-text='green']{
+    color: green;
+}
