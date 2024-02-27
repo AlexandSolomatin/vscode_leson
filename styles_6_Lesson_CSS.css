@@ -1,5 +1,37 @@
+/* Подключение стороннего шрифта. Сначала даем все настройки потом указываем путь */
+@font-face {
+    font-family: opensans;
+    font-weight: normal;
+    font-style: normal;
+    src:url("fonts/OpenSans-Regular.ttf")
+}
+
+@font-face {
+    font-family: opensans;
+    font-weight: bold;
+    src:url("fonts/OpenSans-Bold.ttf")
+}
+
+@font-face {
+    font-family: opensans;
+    font-weight: 900;
+    src:url("fonts/OpenSans-ExtraBold.ttf")
+}
+
+@font-face {
+    font-family: opensans;
+    font-weight: 300;
+    src:url("fonts/OpenSans-Light.ttf")
+}
+
+@font-face {
+    font-family: opensans;
+    font-weight: 600;
+    src:url("fonts/OpenSans-SemiBold.ttf")
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "opensans", Arial, Helvetica, sans-serif;
 }
 /* display: flex; - переводит все элемены внутри div в одну строку */
 .d-flex{
@@ -20,11 +52,11 @@ img {
 
 /* block - перевод из строчного элемента в блочный. inline- наоборот */
 a{
-    display: block;
+    display: inline;
     /* Насыщенность шрифта. bolder - жирный(700) */
-    font-weight: bolder;
+    font-weight: normal;
     /* Меняет наклон шрифта */
-    font-style: italic;
+    /* font-style: italic; */
     /* Убираем подчеркивание ссылок свойсвом none. underline - возвращает их обратно */
     text-decoration: none;
 }
@@ -34,6 +66,15 @@ a{
     width: 300px;
     background-color: blueviolet;
     /* переводит блок в строку */
-    /* display: inline-block; */
-    
+    display: inline-block;
+    /* border - рамка по блоку, border - left и тд по сторонам рамка */
+    /* border: 20px solid rgb(156, 18, 18); */
+    /* Скругляет углы рамки. 
+    Либо 20px 20px 20px 20px. Начиная с верхнего левого угла изменяем каждый угол*/
+    /* border-radius: 200px; */
+
+    /* Добавляем картинку в блок */
+    background: url("images/favourable_wind.jpg") no-repeat;
+    /* Подгоняем картинку по блоку */
+    background-size: cover;
 }
