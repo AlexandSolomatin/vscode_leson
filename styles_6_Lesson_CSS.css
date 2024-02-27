@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* display: flex; - переводит все элемены внутри div в одну строку */
+.d-flex{
+    display: flex;
+    /* Выравнивание элементов div по горизонтали center/left и тд. 
+    space-between -расставляет на одинаковые расстаяния */
+    justify-content: space-between;
+    /* Выравнивание по горизонтали 
+    flex-start - выравнивает по верх краю
+    flex-end - нижний край
+    flex-center - по центру */
+    align-items: flex-start;
+}
+
+img {
+    width: 100px;
+}
+
+/* block - перевод из строчного элемента в блочный. inline- наоборот */
+a{
+    display: block;
+    /* Насыщенность шрифта. bolder - жирный(700) */
+    font-weight: bolder;
+    /* Меняет наклон шрифта */
+    font-style: italic;
+    /* Убираем подчеркивание ссылок свойсвом none. underline - возвращает их обратно */
+    text-decoration: none;
+}
+
+.block {
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    /* переводит блок в строку */
+    /* display: inline-block; */
+    
+}
